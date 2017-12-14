@@ -1,0 +1,15 @@
+.green {
+    background-color: green;
+    height: 50%;
+}
+.red{
+    background-color:red;
+    height: 50%;
+}
+
+.height100{
+    height:100%
+}
+.container{
+    height:500px;
+}
