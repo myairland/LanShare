@@ -13,3 +13,6 @@
 .container{
     height:500px;
 }
+:host { 
+    min-height: 100%;
+}
