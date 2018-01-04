@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppComponent } from './app.component';
+import { InputComponent  } from "./inputbar.component";
+import { MatInputModule  } from "@angular/material";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatInputModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

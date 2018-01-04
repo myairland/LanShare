@@ -1,5 +1,12 @@
 <div   fxLayout="row" fxLayoutAlign="space-between stretch" style="height:100%">
-  <div fxFlex="1 1 30%" style="background:gray">1</div>
-  <div fxFlex="1 1 30%" style="background:yellow">2</div>
-  <div fxFlex="1 1 40%" style="background:blue">3</div>
+  <div fxFlex="1 1 30%" fxHide.lt-md style="background:gray">1</div>
+  <div fxFlex="1 1 30%" fxFlex.lt-md="1 1 100%" style="background:yellow">
+      <div>
+        
+      </div>
+      <div>
+        <input-bar></input-bar> 
+      </div>
+  </div>
+  <div fxFlex="1 1 30%" fxHide.lt-md style="background:blue">3</div>
 </div>
