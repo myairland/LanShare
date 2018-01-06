@@ -5,16 +5,23 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { AppComponent } from './app.component';
 import { InputComponent  } from "./inputbar.component";
 import { MatInputModule  } from "@angular/material";
+import { MatButtonModule  } from "@angular/material";
+import { MatCardModule  } from "@angular/material";
+import { ContainerComponent } from './container.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    InputComponent
+    InputComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,
     FlexLayoutModule,
-    MatInputModule    
+    MatInputModule,
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
