@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
     selector: 'container',
@@ -6,7 +6,14 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./container.component.scss']
 })
 export class ContainerComponent implements OnInit {
+    @Input()
+     message : string;
+
+
     constructor() { }
 
-    ngOnInit() { }
+    ngOnInit() { 
+        this.message = "1231231231";
+    }
+    
 }

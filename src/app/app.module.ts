@@ -8,6 +8,8 @@ import { MatInputModule  } from "@angular/material";
 import { MatButtonModule  } from "@angular/material";
 import { MatCardModule  } from "@angular/material";
 import { ContainerComponent } from './container.component';
+import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { ContainerComponent } from './container.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    BrowserAnimationsModule,
     FlexLayoutModule,
     MatInputModule,
     MatButtonModule,

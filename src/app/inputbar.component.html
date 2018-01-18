@@ -1,8 +1,8 @@
 <div fxLayout="row">
     <mat-form-field fxFlex="1 1 90%">
-        <input matInput placeholder="message" value="1121" class="inputbar">
+        <input matInput placeholder="" [(ngModel)]="message" class="inputbar">
     </mat-form-field>
     <div fxFlex="1 1 10%">
-        <button mat-raised-button>publish</button>
+        <button mat-raised-button (click)="publishData()">publish</button>
     </div>
 </div>

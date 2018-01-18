@@ -8,4 +8,10 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 })
 export class AppComponent {
   title = 'app';
+  data : string = "";
+
+  sendDataToGrid(message:string)
+  {
+    this.data = message;
+  }
 }

@@ -1,14 +1,14 @@
 <div   fxLayout="row" fxLayoutAlign="space-between stretch" style="height:100%">
-  <div fxFlex="1 1 20%" fxHide.lt-md style="background:gray">1</div>
+  <div fxFlex="1 1 20%" fxHide.lt-md></div>
   <div fxFlex="1 1 60%" fxFlex.lt-md="1 1 100%" style="background:yellow">
       <div fxLayout="column" fxLayoutAlign="start stretch" style="height:100%" >
-        <div fxFlex="1 1 80%">
-          <container></container> 
+        <div fxFlex="1 1 90%">
+          <container [message]="data"></container> 
         </div>
-        <div fxFlex="1 1 20%">
-          <input-bar></input-bar> 
+        <div fxFlex="1 1 10%">
+          <input-bar (onPublishData)="sendDataToGrid($event)"></input-bar> 
         </div>
       </div>
   </div>
-  <div fxFlex="1 1 20%" fxHide.lt-md style="background:blue">3</div>
+  <div fxFlex="1 1 20%" fxHide.lt-md></div>
 </div>
