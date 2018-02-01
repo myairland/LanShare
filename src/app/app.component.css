@@ -2,8 +2,13 @@
     height:100%
 }
 .container{
-    height:500px;
+    border:1px solid #cccccc;
+    padding:3px;
 }
 :host { 
     min-height: 100%;
+}
+
+.outline {
+    border:solid 2px;
 }

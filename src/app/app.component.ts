@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +11,10 @@ export class AppComponent {
   title = 'app';
   data : string = "";
 
-  sendDataToGrid(message:string)
+  public sendDataToGrid(message:string)
   {
-    this.data = message;
+    let nowTime : Date = new Date();
+    let now = moment().format("YYYY/MM/DD H:m:s")
+    this.data = now + " " + message;
   }
 }
